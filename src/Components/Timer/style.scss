@@ -1,0 +1,25 @@
+$bg-circle-color: #eee;
+$ac-circle-color: red;
+$stroke-width: 5;
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.circle-face {
+  fill: transparent;
+  stroke: $bg-circle-color;
+  stroke-width: $stroke-width;
+
+  &.indicator {
+    stroke: $ac-circle-color;
+    transform: rotate(-90deg);
+    transition: 0.35s stroke-dashoffset;
+  }
+}
+
+.timer text{
+  fill: $ac-circle-color;
+  
+}
